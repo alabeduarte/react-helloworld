@@ -4,5 +4,8 @@
   "authors": [
     "Alabê Duarte <aduarte@thoughtworks.com>"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "react": "~0.13.1"
+  }
 }
