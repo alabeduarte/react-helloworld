@@ -2,10 +2,12 @@
   "name": "react-helloworld",
   "version": "1.0.0",
   "scripts": {
-    "install": "./node_modules/gulp/bin/gulp.js && ./node_modules/bower/bin/bower install"
+    "install": "./node_modules/gulp/bin/gulp.js"
   },
   "devDependencies": {
     "bower": "^1.4.1",
-    "gulp": "^3.8.11"
+    "gulp": "^3.8.11",
+    "gulp-bower": "0.0.10",
+    "gulp-react": "^3.0.1"
   }
 }
