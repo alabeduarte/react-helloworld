@@ -3,8 +3,8 @@ var react = require('gulp-react');
 var bower = require('gulp-bower');
 
 gulp.task('default', function(){
-  return gulp.src('jsx/*.jsx')
+  return gulp.src('public/jsx/*.jsx')
     .pipe(react())
-    .pipe(gulp.dest('dist/js/'))
+    .pipe(gulp.dest('public/dist/js/'))
     .pipe(bower());
 });

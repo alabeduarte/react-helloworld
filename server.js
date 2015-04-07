@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 
 app.set('port', process.env.PORT || 9000);
-app.use(express.static('.'));
+app.use(express.static('public'));
 
 app.get('/comments.json', function(req, res) {
   res.send(
