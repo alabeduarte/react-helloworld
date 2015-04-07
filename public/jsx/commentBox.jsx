@@ -1,8 +1,16 @@
 var CommentBox = React.createClass({
   loadComments: function() {
-    $.get(this.props.url, function(data) {
-      this.setState({ data: data });
-    }.bind(this));
+    $.ajax({
+      url: this.props.url,
+      dataType: 'json',
+      success: function(data) {
+        console.log('√', data);
+        this.setState({data: data});
+      }.bind(this),
+      error: function(xhr, status, err) {
+        console.error("<!>", this.props.url, status, err.toString());
+      }.bind(this)
+    });
   },
   handleCommentSubmit: function(comment) {
     $.ajax({
