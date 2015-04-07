@@ -7,8 +7,8 @@ app.use(express.static('public'));
 app.get('/comments.json', function(req, res) {
   res.send(
     [
-      {"author": "Pete Hunt", "text": "This is one comment"},
-      {"author": "Jordan Walke", "text": "This is *another* comment"}
+      { "id": "1", "author": "Pete Hunt", "text": "This is one comment" },
+      { "id": "2", "author": "Jordan Walke", "text": "This is *another* comment" }
     ]
   );
 });
