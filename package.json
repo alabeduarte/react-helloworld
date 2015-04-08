@@ -9,6 +9,7 @@
     "bower": "^1.4.1",
     "gulp": "^3.8.11",
     "gulp-bower": "0.0.10",
+    "gulp-browserify": "^0.5.1",
     "gulp-react": "^3.0.1"
   },
   "dependencies": {

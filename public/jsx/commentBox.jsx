@@ -1,3 +1,6 @@
+var CommentList = require('./commentList.js');
+var CommentForm = require('./commentForm.js')
+
 var CommentBox = React.createClass({
   loadComments: function() {
     $.ajax({
@@ -50,3 +53,5 @@ React.render(
   <CommentBox url="http://localhost:9000/comments.json" />,
   document.getElementById('content')
 );
+
+module.exports = CommentBox;

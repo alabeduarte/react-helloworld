@@ -22,3 +22,5 @@ var CommentForm = React.createClass({
     );
   }
 });
+
+module.exports = CommentForm;
